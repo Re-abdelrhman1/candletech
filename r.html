@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            overflow: hidden;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            background: url('images/hhhh.jpeg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .overlay {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+            button:hover {
+                background-color: #45a049;
+            }
+
+        .confirmation-message {
+            color: green;
+            margin-top: 10px;
+            display: none;
+        }
+
+        .back-button {
+            background-color: #555;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+
+            .back-button:hover {
+                background-color: #333;
+            }
+    </style>
+    <title>Candeltech</title>
+</head>
+
+<body>
+
+    <div class="overlay" id="formOverlay">
+        <h2>تسجيل</h2>
+        <input type="text" placeholder="الاسم" id="nameInput" required>
+        <select id="departmentSelect" required>
+            <option value="" disabled selected>اختر القسم</option>
+            <option value="software">هندسة برمجيات</option>
+            <option value="ai">ذكاء اصطناعي</option>
+        </select>
+        <input type="email" placeholder="البريد الإلكتروني" id="emailInput" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+        <button onclick="showConfirmation()">حسناً</button>
+        <p class="confirmation-message" id="confirmation-message">سيصلك رابط على البريد الإلكتروني الخاص بك.</p>
+        <button class="back-button" onclick="goBack()">عودة</button>
+    </div>
+
+    <script>
+        function showConfirmation() {
+            var nameInput = document.getElementById("nameInput").value;
+            var departmentSelect = document.getElementById("departmentSelect").value;
+            var emailInput = document.getElementById("emailInput").value;
+
+            if (nameInput && departmentSelect && emailInput) {
+                document.getElementById("confirmation-message").style.display = "block";
+            } else {
+                alert("الرجاء ملء جميع الحقول");
+            }
+        }
+
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+
+</html>

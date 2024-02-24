@@ -1,0 +1,128 @@
+﻿<
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        * {
+            text-decoration: none;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            overflow: hidden;
+            background-image: url('images/hh.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .cards-container {
+            display: flex;
+            gap: 20px;
+            max-width: 1200px;
+            overflow: hidden;
+        }
+
+        .card {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            padding: 20px;
+            flex: 1;
+            transition: transform 0.5s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+            .card:hover {
+                transform: translateY(-20px);
+            }
+
+        #secondCard {
+            display: none;
+        }
+
+            #secondCard:checked + label + .cards-container > .card:first-child {
+                transform: translateY(-20px);
+            }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            right: 10px;
+            bottom: 10px;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            bottom: 80px; /* زيادة الارتفاع أدناه حسب الحاجة */
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .close-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+            .close-button:hover {
+                background-color: #45a049;
+            }
+    </style>
+    <title>Candeltech</title>
+</head>
+
+<body>
+   
+        <input type="checkbox" id="secondCard">
+
+
+        <div class="cards-container">
+            <div class="card">
+                <h1>هندسة البرمجيات</h1>
+                <p>تخصص هندسة البرمجيات يركز على تصميم وتطوير البرمجيات بطرق مبتكرة وفعّالة. يشمل ذلك فهم اللغات البرمجية المختلفة، وتصميم واجهات المستخدم، وتطوير تطبيقات الويب والجوال.</p>
+                <p>مراحل تدريس ملائمة للأطفال تشمل استخدام الألعاب التعليمية والتفاعلية لتعليم أساسيات البرمجة بطريقة ممتعة ومشوقة.</p>
+                <p>لغات البرمجة: Python, Scratch, JavaScript</p>
+            </div>
+            <div class="button-container">
+                <a href="index1.html#services">
+                    <div class="close-button">حسناً</div>
+                </a>
+            </div>
+
+            <div class="card">
+                <h1>الذكاء الاصطناعي</h1>
+                <p>تخصص الذكاء الاصطناعي يركز على تطوير نظم ذكية قادرة على معالجة البيانات واتخاذ قرارات. يشمل ذلك دراسة تقنيات التعلم الآلي وتطبيقاتها في مجالات متعددة.</p>
+                <p>مراحل تدريس مناسبة للأطفال تشمل تقديم مفاهيم الذكاء الاصطناعي بشكل بسيط ومشوق، مع فهم كيفية تطبيقها في حياتهم اليومية.</p>
+                <p>لغات البرمجة: Python, Scratch</p>
+            </div>
+        </div> 
+</body>
+
+</html>
+
+
+

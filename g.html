@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            background: url('images/codee.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .overlay {
+            background: rgba(255, 255, 255, 0.7); /* تعديل شفافية النافذة المنبثقة هنا */
+            color: black;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 500px;
+            width: 100%;
+            position: relative;
+        }
+
+        .close-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+            .close-button:hover {
+                background-color: #45a049;
+            }
+    </style>
+    <title>Candeltech</title>
+</head>
+
+<body>
+
+    <div class="overlay">
+        <h1>أهداف نسعي لتحقيقها </h1>
+        <p>
+           
+           <br> تعليم البرمجة بشكل ممتع: توفير بيئة تعلم مشوقة ومحفزة تجعل عملية تعلم البرمجة ممتعة ومثيرة للاهتمام بالنسبة للأطفال.
+
+            تطوير مهارات التفكير الإبداعي: تحفيز التفكير الإبداعي والابتكار من خلال تقديم مشاريع تشجع على الخيال والإبداع.
+
+            تعزيز التفاعل والمشاركة: إنشاء منصة تفاعلية تشجع على التعاون والمشاركة بين الأطفال من خلال مشاريع جماعية ونشاطات تعاونية.
+
+            توجيه التعلم نحو الهدف: توجيه البرمجة نحو أهداف واقعية قد يكون مناسبًا للأطفال، مما يجعلهم يرى نتائج عملهم بشكل فوري.
+
+            تعزيز مفهوم التحدي: إدماج تحديات برمجية تساعد على بناء الصبر وتعزيز الرغبة في التغلب على الصعوبات.
+
+            تطوير مهارات حل المشكلات: تعزيز مهارات حل المشكلات من خلال تقديم تحديات برمجية تتطلب البحث والتحليل وابتكار حلول فعّالة.
+
+            تعزيز التعلم الذاتي: تشجيع الأطفال على تطوير قدرات التعلم الذاتي والبحث لتنمية رغبتهم في استكشاف مفاهيم جديدة.
+                
+        </p>
+        <button class="close-button" onclick="redirectToIndex()">حسناً</button>
+    </div>
+
+    <script>
+        function redirectToIndex() {
+            window.location.href = "index1.html#services";
+        }
+    </script>
+</body>
+
+</html>
